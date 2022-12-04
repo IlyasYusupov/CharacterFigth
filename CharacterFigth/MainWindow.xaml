@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CharacterFigth"
         mc:Ignorable="d"
-        Title="MainWindow" Height="407" Width="300">
+        Title="MainWindow" Height="426" Width="300" ResizeMode="NoResize">
     <Grid RenderTransformOrigin="0.528,0.503" Margin="0,0,349,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
@@ -42,7 +42,7 @@
             <TextBlock Name="tbMagicalAttake" TextWrapping="Wrap" Text="2" Margin="97,-67,0,0" Height="20" Width="25" HorizontalAlignment="Left"/>
             <TextBlock Name="tbManaPool" TextWrapping="Wrap" Text="7" Margin="90,-17,0,0" Height="20" Width="25" HorizontalAlignment="Left"/>
             <ProgressBar Name="pbLVL" Height="18" Width="139" Margin="10,10,0,0" HorizontalAlignment="Left"/>
-            <TextBlock Name="LVL" TextWrapping="Wrap" Text="lvl: 1" Margin="10,-18,0,0" Height="20" Width="25" HorizontalAlignment="Left"/>
+            <TextBlock Name="LVL" TextWrapping="Wrap" Text="lvl: 1" Margin="10,-18,0,0" Height="20" Width="39" HorizontalAlignment="Left"/>
             <TextBlock Name="XP" TextWrapping="Wrap" Text="/ 0 xp" Margin="40,-20,0,0" Height="20" Width="32" HorizontalAlignment="Left"/>
             <Button x:Name="btnCreate" Content="Save" Margin="200,40,0,10" Width="70" Height="20"  Click="btnCreate_Click" HorizontalAlignment="Left" />
         </StackPanel>

@@ -79,8 +79,8 @@
         </StackPanel>
         <Button Name="btnFight"  Content="Fight" HorizontalAlignment="Left" Margin="370,0,0,0" VerticalAlignment="Center" Grid.ColumnSpan="2" Width="80" Click="btnFight_Click"/>
         <Button Name="btnPhysAttack" Content="Physical attack" Visibility="Hidden" HorizontalAlignment="Left" Margin="366,111,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="90" Click="btnPhysAttack_Click"/>
-        <Button Name="btnMagAttack" Content="Magical attack" Visibility="Hidden" HorizontalAlignment="Left" Margin="366,140,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="90"/>
-        <Button Name="btnSelfHeal" Content="SelfHeal" Visibility="Hidden" HorizontalAlignment="Left" Margin="366,170,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="90" />
+        <Button Name="btnMagAttack" Content="Magical attack" Visibility="Hidden" HorizontalAlignment="Left" Margin="366,140,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="90" Click="btnMagAttack_Click"/>
+        <Button Name="btnSelfHeal" Content="SelfHeal" Visibility="Hidden" HorizontalAlignment="Left" Margin="366,170,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="90" Click="btnSelfHeal_Click"/>
         <TextBlock Name="tbWhoAttack" HorizontalAlignment="Left" Margin="356,35,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Grid.ColumnSpan="2" Width="108" Foreground="Red" FontSize="14" FontWeight="Bold"/>
         <ListBox Name="listChat" Visibility="Hidden" Grid.ColumnSpan="2" Margin="311,221,0,0" Width="200" Height="108" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <TextBlock Name="chat" HorizontalAlignment="Left" Margin="398,205,0,0" Visibility="Hidden" TextWrapping="Wrap" Text="Chat" VerticalAlignment="Top" Grid.ColumnSpan="2"/>

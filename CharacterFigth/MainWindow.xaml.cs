@@ -63,6 +63,9 @@ namespace CharacterFigth
                         pbLVL.Value = newCharacter.XP;
                         break;
                 }
+                if (newCharacter.LVL == 0)
+                    newCharacter.LVL = 1;
+
                 LVL.Text = $"LVL: {newCharacter.LVL}";
                 XP.Text = $"/ {newCharacter.XP} xp";
                 CalcParameters();

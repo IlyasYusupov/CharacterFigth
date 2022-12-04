@@ -24,7 +24,7 @@ namespace CharacterFigth
         protected int manaPool;
 
         public Character(string Name, int strength, int dexterity, int constitution, int intellect, int healthPoint,
-                        int physicalAttake, int magicalAttake, int manaPool, int LVL, int XP, int skillPoints, int luck)
+                        int physicalAttake, int magicalAttake, int manaPool, int XP, int LVL, int skillPoints, int luck)
         {
             this.name = Name;
             this.lvl = LVL;
