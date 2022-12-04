@@ -1,0 +1,50 @@
+﻿<Window x:Class="CharacterFigth.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CharacterFigth"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="407" Width="300">
+    <Grid RenderTransformOrigin="0.528,0.503" Margin="0,0,349,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackPanel Margin="0,0,-299,0"   >
+            <TextBlock   Text="Name:" Width="48" HorizontalAlignment="Left" Margin="10,10,0,0" Height="16"/>
+            <TextBox x:Name="tbName" Width="104" HorizontalAlignment="Left" Margin="10,6,0,0" Height="18"  />
+            <TextBlock  Text="Strength:" HorizontalAlignment="Left" Margin="10,10,0,0" IsEnabled="False"/>
+            <TextBlock  Text="Dexterity:" IsEnabled="False" HorizontalAlignment="Left" Margin="10,10,0,0"/>
+            <TextBlock  Text="Constitution:" IsEnabled="False" Margin="10,10,0,0" HorizontalAlignment="Left"/>
+            <TextBlock  Text="Intellect:" IsEnabled="False" Margin="10,10,0,0"/>
+            <TextBlock  Text="Luck:" IsEnabled="False" Margin="10,10,0,0"/>
+            <TextBlock Name="tbStrength" TextWrapping="Wrap" Text="1" Margin="69,-223,0,0" Height="20" Width="25" HorizontalAlignment="Left"/>
+            <TextBlock Name="tbDexterity" TextWrapping="Wrap" Text="1" Margin="73,-170,0,0" Height="20" Width="25" HorizontalAlignment="Left"/>
+            <TextBlock Name="tbConstitution" TextWrapping="Wrap" Text="1" Margin="85,-114,0,0" Height="20" Width="25" HorizontalAlignment="Left"/>
+            <TextBlock Name="tbIntellect" TextWrapping="Wrap" Text="1" Margin="73,-68,0,0" Height="20" Width="25" HorizontalAlignment="Left"/>
+            <TextBlock Name="tbLuck" TextWrapping="Wrap" Text="1" Margin="59,-17,0,0" Height="20" Width="25" HorizontalAlignment="Left"/>
+            <Button Width="30" Height="20" Margin="120,-230,0,0" HorizontalAlignment="Left" Click="ButtonBoost_Click" Tag="Strength"/>
+            <Button Width="30" Height="20" Margin="120,-178,0,0" HorizontalAlignment="Left" Click="ButtonBoost_Click" Tag="Dexterity"/>
+            <Button Width="30" Height="20" Margin="120,-124,0,0" HorizontalAlignment="Left" Click="ButtonBoost_Click" Tag="Constitution"/>
+            <Button Width="30" Height="20" Margin="120,-72,0,0" HorizontalAlignment="Left" Click="ButtonBoost_Click" Tag="Intellect"/>
+            <Button Width="30" Height="20" Margin="120,-21,0,0" HorizontalAlignment="Left" Click="ButtonBoost_Click" Tag="Luck"/>
+            <TextBlock  x:Name="tbSkillPoint" Text="Skill points:" Width="65" HorizontalAlignment="Left" Margin="135,-330,0,0" Height="16"/>
+            <TextBlock Name="tbSkillPoints" Text="15" Width="28" HorizontalAlignment="Left" Margin="152,-288,0,0" Height="18"  />
+            <TextBlock Text="Health point:" IsEnabled="False" Margin="10,10,0,0"/>
+            <TextBlock Text="Physical attack" HorizontalAlignment="Left" Margin="10,10,0,0" IsEnabled="False"/>
+            <TextBlock Text="Magical attack:" IsEnabled="False" HorizontalAlignment="Left" Margin="10,10,0,0"/>
+            <TextBlock Text="Manna pool:" IsEnabled="False" Margin="10,10,0,0" HorizontalAlignment="Left"/>
+            <TextBlock Name="tbHealthPoint" TextWrapping="Wrap" Text="5" Margin="90,-169,0,0" Height="20" Width="25" HorizontalAlignment="Left"/>
+            <TextBlock Name="tbPhysicalAttake" TextWrapping="Wrap" Text="1" Margin="97,-118,0,0" Height="20" Width="25" HorizontalAlignment="Left"/>
+            <TextBlock Name="tbMagicalAttake" TextWrapping="Wrap" Text="2" Margin="97,-67,0,0" Height="20" Width="25" HorizontalAlignment="Left"/>
+            <TextBlock Name="tbManaPool" TextWrapping="Wrap" Text="7" Margin="90,-17,0,0" Height="20" Width="25" HorizontalAlignment="Left"/>
+            <ProgressBar Name="pbLVL" Height="18" Width="139" Margin="10,10,0,0" HorizontalAlignment="Left"/>
+            <TextBlock Name="LVL" TextWrapping="Wrap" Text="lvl: 1" Margin="10,-18,0,0" Height="20" Width="25" HorizontalAlignment="Left"/>
+            <TextBlock Name="XP" TextWrapping="Wrap" Text="/ 0 xp" Margin="40,-20,0,0" Height="20" Width="32" HorizontalAlignment="Left"/>
+            <Button x:Name="btnCreate" Content="Save" Margin="200,40,0,10" Width="70" Height="20"  Click="btnCreate_Click" HorizontalAlignment="Left" />
+        </StackPanel>
+    </Grid>
+</Window>
